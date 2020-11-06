@@ -30,11 +30,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     TextView loadingTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences sharedPref = getSharedPreferences(
+                "streamingservicepreferences", Context.MODE_PRIVATE);
         streamingService = sharedPref.getString("streamingservice", "appleMusic");
+        Log.d("LinkConverterForSpotify", "StreamingService is " + streamingService);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
@@ -46,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onNewIntent(Intent intent){
+    protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
         handleIntent();
@@ -92,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 String line = "";
 
                 while ((line = reader.readLine()) != null) {
-                    buffer.append(line+"\n");
+                    buffer.append(line + "\n");
                 }
 
                 return buffer.toString();

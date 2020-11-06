@@ -1,17 +1,32 @@
 <resources>
     <string name="app_name">LinkConverterForSpotify</string>
-
     <string-array name="loading_texts">
         <item>Let\'s open this in a superior streaming service…</item>
-        <item>From Spotify to a good streaming service…</item>
+        <item>From Spotify to another streaming service…</item>
         <item>Switching to the better streaming service…</item>
         <item>Switching to the streaming service for cool kids…</item>
         <item>Wait, I think we better open this in another streaming service…</item>
+        <item>Please wait a second...</item>
     </string-array>
     <string name="title_activity_start">LinkConverterForSpotify</string>
-    <string name="explanation">This app takes advantage of the fact that in Android it is possible to open links directly with a certain app.\n\nIf you open a Spotify link for the first time after installing this app, you can choose to always open such links in LinkConverterForSpotify.\n (You can also define this in your Android Settings)\n\nFrom now on, every time you open a Spotify link, the corresponding song will open in the AppleMusic or Tidal App.\n\n   And that\'s it.</string>
+    <string name="explanation">This app makes sure that Spotify links automatically open in another
+        streaming service. The first time you open a Spotify link after installing this app,
+        and Spotify is not installed, Android will suggest that you open links with LinkConverterForSpotify
+        by default. Choose this option to ensure the best possible functionality of this app.
+        (You can also change the default apps for opening spotify links later in the settings).
+        \n\nThe desired streaming service can be easily selected below:</string>
     <string name="apiUsed">This app uses the great API from odesli.co</string>
     <string name="explanationTitle">How it works</string>
-    <string name="notAffiliated">"Spotify, Apple Music and Tidal are trademarks of their respective owners.
-This app is not affiliated with the Spotify, Apple Music or Tidal."</string>
+    <string name="notAffiliated">Spotify, AppleMusic, Tidal, Deezer, AmazonMusic and YouTubeMusic
+        are trademarks of their respective owners.
+        This app is not affiliated with these companies or trademarks.</string>
+    <string name="versionText">LinkConverterForSpotify v.</string>
+    <string name="author">by Aljosha.eu</string>
+    <string-array name="streaming_services">
+        <item>appleMusic</item>
+        <item>tidal</item>
+        <item>deezer</item>
+        <item>amazonMusic</item>
+        <item>youtubeMusic</item>
+    </string-array>
 </resources>

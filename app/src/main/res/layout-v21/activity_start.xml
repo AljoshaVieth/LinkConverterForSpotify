@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="321dp"
-        android:layout_height="289dp"
+        android:layout_width="318dp"
+        android:layout_height="209dp"
         android:text="@string/explanation"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
@@ -42,10 +42,14 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/apiUsed"
-        android:textColor="#FFFFFF"
+        android:textColor="#CD000000"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/notAffiliatedTextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorTextView"
+        app:layout_constraintVertical_bias="0.915" />
 
     <TextView
         android:id="@+id/notAffiliatedTextView"
@@ -54,33 +58,10 @@
         android:layout_marginBottom="4dp"
         android:text="@string/notAffiliated"
         android:textAlignment="center"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="switchToApple"
-        android:text="use AppleMusic"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="switchToTidal"
-        android:text="use Tidal"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/odesliTextView"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
@@ -97,8 +78,11 @@
         android:id="@+id/authorTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:layout_marginTop="184dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
