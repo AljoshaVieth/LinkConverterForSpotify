@@ -4,7 +4,7 @@
 
 # Link Converter for Spotify
 
-Link Converter for Spotify is a small Android App to open Spotify-links in the app of another music streaming provider.
+Link Converter for Spotify is a small Android App to open Spotify-links in the app of another music streaming provider. (Apple Music, Tidal, Deezer, AmazonMusic or YoutubeMusic)
 
 This app takes advantage of the fact that in Android it is possible to open links directly with a certain app. If you open a Spotify link for the first time after installing this app, you can choose to always open such links in **LinkConverterForSpotify**. (You can also define this in your Android Settings). From now on, every time you open a Spotify link, the corresponding song will open in the App of your favorite music streaming provider.
 
